@@ -13,5 +13,6 @@ mkdocs:
    configuration: mkdocs.yaml
 
 python:
+   run: pip complile docs/requirements.in
    install:
    - requirements: docs/requirements.txt
