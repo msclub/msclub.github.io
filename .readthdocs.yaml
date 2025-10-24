@@ -1,0 +1,17 @@
+# Read the Docs Configuration File.
+version: 2
+
+build:
+   os: "ubuntu-latest"
+   tools:
+      python: "3.12"
+   jobs:
+   pre_install:
+      - pip install mkdocs-material
+
+mkdocs:
+   configuration: mkdocs.yaml
+
+python:
+   install:
+   - requirements: docs/requirements.txt
